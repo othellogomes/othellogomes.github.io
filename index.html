@@ -3,132 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Othello's Personal Webpage</title>
+    <title>Othello D. Gomes</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background: #fafafa;
+            color: #222;
         }
-        header {
-            background-color: #0033a0;
-            color: white;
-            padding: 20px;
+        header, footer {
+            background: #004080;
+            color: #fff;
             text-align: center;
+            padding: 1rem;
+        }
+        main {
+            padding: 1rem 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #004080;
         }
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
+            margin-bottom: 1rem;
         }
         nav a {
-            color: white;
-            padding: 14px 20px;
+            margin: 0 1rem;
+            color: #004080;
             text-decoration: none;
-            text-align: center;
+            font-weight: bold;
         }
-        nav a:hover {
-            background-color: #575757;
+        .contact-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            text-decoration: none;
+            color: #004080;
         }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #0033a0;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .content {
-            max-width: 800px;
-            width: 100%;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        .section {
+            margin-bottom: 2rem;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Othello's Personal Webpage</h1>
-    </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#education">Education</a>
-        <a href="#research">Research</a>
-        <a href="#social-media">Social Media</a>
-        <a href="#resume">Resume</a>
-        <a href="#portfolio">Portfolio and Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <div class="content">
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Hello there, my name is Othello (they/he): I'm a junior-senior undergraduate Physics student at the University of Maryland, College Park. My current research interests lie in Quantum Information and Computational Complexity Theory. I've spent my recent years finding which field of Physics interests me, I've been involved in a few projects pertaining to theory: namely Exoplanet Astrophysics, and Quantum Information Science.</p>
-                <p>I'm currently involved in a Quantum Information Science research project with the Joint Center for Quantum Information and Computer Science (QuICS), which is affiliated with the Institute for Advanced Computer Studies at UMD (UMIACS). I'm working on the Easing and Curing the Quantum Sign Problem via boundary and physical phase transitions. The way this is being approached is by studying the mappings between the computational complexity classes and estimating how difficult or easy those problems are; based on that, we graph the average sign and locate where the most computationally tasking problem lay and analyze them to figure out what can be done to cure and ease them (note that easing and curing may not apply to all cases of the computational complexity classes, they vary depending on how they map).</p>
-                <p>I initially started my journey as a community college student at the Rockville campus of Montgomery College, where I majored and got my Associate of Science degree in Mathematics. I always knew my interests to be in the physical and mathematical sciences: I found my first opportunity with exploring my interests with the GRAD-MAP program, which is a diversity initiated program aimed towards equipping historically marginalized communities with basic research skills and eventually giving them an opportunity to participate in research with their Summer Scholars Program. With the help of this program, I was able to realize my interest in research and whether I'd continue down this path of exploration.</p>
-                <p>I eventually transferred to UMCP in the Fall of 2022 to continue my pursuit of this very interest and now I'm looking forward to growing my capabilities and skills towards doing research in theory. My goal right now is to enhance and improvise on my skills and any areas where I lack them to prepare myself for graduate school in Theoretical Physics.</p>
-            </section>
-            <section id="education">
-                <h2>Education</h2>
-                <ul>
-                    <li>B.S. in Physics - University of Maryland, College Park (2025)</li>
-                    <li>A.S. in Mathematics - Montgomery College, Rockville (2022)</li>
-                </ul>
-            </section>
-            <section id="research">
-                <h2>Research</h2>
-                <h3>Comparison of Simulation Tools for Precise Two-Photon Background EWK Z Boson Measurements at the FCC - MIT</h3>
-                <p><strong>January 2024 - Present</strong></p>
-                <p>This project was for a Particle Physics class that I took with Dr. Christopher Palmer in the Spring of 2024 and the projects done were jointly between UMD and MIT. There were 3 undergraduate students in my group (including myself) and we were being advised by a graduate student, Luca Lavezzo, a post-doctoral scholar, Dr. Jan Eysermans, and a faculty member, Dr. Christoph Paus. At UMD, we were being advised by Dr. Chris Palmer. We worked on simulating the two-photon virtual background from Z Boson collision event via Monte Carlo generators (Whizard3 and Pythia8). We analyzed various kinematic properties by plotting the invariant mass, pseudorapidity, luminosity, four-vector momentum, and cuts of each segment of the event.</p>
-                <h3>Easing and Curing the Quantum Sign Problem via phase transitions: QuICS - UMD</h3>
-                <p><strong>August 2022 - December 2023</strong></p>
-                <p>I reconvened with my GRAD-MAP Winter Workshop mentor (in association with a post-doctoral scholar) to work on my current research project under a Seed Grant via Jacob Bringewatt through the Joint Center for Quantum Information and Computer Science. I am interpreting the mappings of computational complexity class 3SAT and MAX2SAT in NP-Complete, and NP-Hard to two-local Hamiltonians that have a quantum numerical sign problem. Depending on how bad the sign problem is, next steps involve mitigating or curing it as well as finding a physical interpretation of the Lattice Ising model mapping that is within a similar computational complexity class.</p>
-                <h3>Explaining the Re-inflation of Hot Jupiters Orbiting Post-Main Sequence Stars: GRAD-MAP Summer Scholars 2022 - UMD</h3>
-                <p><strong>May 2022 - August 2022</strong></p>
-                <p>For the summer of 2022, I continued with GRAD-MAP into their Summer Scholars REU program, where I was paired to work under an Astronomy faculty mentor on figuring out the re-inflation of Hot Jupiters orbiting post-main sequence stars. During my time with this program, I learned how to read, analyze, and present research papers and how to do active data analysis and figure out results from simulations based on the research project I was undertaking.</p>
-                <h3>Geometry of Quantum States: GRAD-MAP Winter Workshop 2022 - UMD</h3>
-                <p><strong>December 2021 - January 2022</strong></p>
-                <p>Over the winter between 2021 and 2022, I was involved with GRAD-MAP's Winter Workshop, which was a week-long workshop on enhancing students - with interests in astronomy and physical sciences - with skills relevant to performing research necessary for those mentioned fields: it consisted of a 5 day long Python bootcamp, which equipped you with tools to perform data analysis and simulating numerical solutions to general problems. During the duration of the workshop, everyone was also assigned with a mentor to work on a mini-research project and, I was assigned with a mentor to work on a Quantum Systems project.</p>
-            </section>
-            <section id="social-media">
-                <h2>Social Media</h2>
-                <p>LinkedIn: [Your LinkedIn Profile]</p>
-                <p>Twitter: [Your Twitter Handle]</p>
-                <p>GitHub: [Your GitHub Profile]</p>
-            </section>
-            <section id="resume">
-                <h2>Resume</h2>
-                <p>[Link to your resume or provide text here]</p>
-            </section>
-            <section id="portfolio">
-                <h2>Portfolio and Projects</h2>
-                <p>[Link to your portfolio or list of projects]</p>
-            </section>
-            <section id="contact">
-                <h2>Contact Information</h2>
-                <p>Email: [Your Email Address]</p>
-                <p>Phone: [Your Phone Number]</p>
-            </section>
+
+<header>
+    <h1>Othello D. Gomes</h1>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#research">Research</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Hello there, my name is Othello (they/he). I am currently a Ph.D. student in physics at the University of Cincinnati,
+            aspiring to go into experimental High Energy Physics and detector R&amp;D. I am currently a Teaching Assistant for
+            General &amp; College Physics II Labs for Fall 2025. Previously, I was an undergraduate physics student at the
+            University of Maryland, College Park. :contentReference[oaicite:0]{index=0}
+        </p>
+        <p>
+            During my time at UMD, I was involved in a few projects ranging from theory to experiment: exoplanet astrophysics,
+            quantum information science, and particle physics. :contentReference[oaicite:1]{index=1}
+        </p>
+        <p>
+            I was recently involved with the Large Hadron Collider beauty (LHCb) flavor physics group, where I am being supervised
+            by Prof. Phoebe Hamilton on R&amp;D for the LHCb experiment’s ECAL for Upgrades Ib and II, an effort known as PicoCal
+            within the collaboration. :contentReference[oaicite:2]{index=2}
+        </p>
+        <p>
+            Prior to that, I worked on the analysis of the Z-Hadronic cross section comparing the difference between two MC
+            generators in the background and using the uncertainty of it to apply cuts to final states of Z, in affiliation with
+            Prof. Christoph Paus’ group at MIT. :contentReference[oaicite:3]{index=3}
+        </p>
+        <p>
+            I have also worked with the Joint Center for Quantum Information and Computer Science (QuICS), affiliated with the
+            Institute for Advanced Computer Studies at UMD: my project there was on easing and curing the quantum Monte Carlo sign
+            problem via boundary and physical phase transitions. :contentReference[oaicite:4]{index=4}
+        </p>
+        <p>
+            I initially started my journey as a community college student at the Rockville campus of Montgomery College, where I
+            earned my Associate of Science degree in Mathematics. I always knew my interests were in the physical and mathematical
+            sciences, starting with the GRAD-MAP program which helped equip historically marginalized communities with basic
+            research skills. :contentReference[oaicite:5]{index=5}
+        </p>
+    </section>
+
+    <!-- Research Placeholder -->
+    <section id="research" class="section">
+        <h2>Research</h2>
+        <p>Details about research projects will go here. You can link PDFs, documents, or project pages.</p>
+    </section>
+
+    <!-- Portfolio Placeholder -->
+    <section id="portfolio" class="section">
+        <h2>Portfolio</h2>
+        <p>Links and descriptions of portfolio items (talks, posters, code, publications, etc.) go here.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2>Contact &amp; Social Media</h2>
+        <div class="contact-links">
+            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
+            <a href="https://twitter.com/yourhandle">Twitter</a>
+            <a href="https://www.youtube.com/@yourchannel">YouTube</a>
+            <span>Discord: <strong>shakespeareanjoke</strong></span>
         </div>
-    </div>
-    <footer>
-        <p>&copy; 2024 Othello's Personal Webpage</p>
-    </footer>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Othello D. Gomes</p>
+</footer>
+
 </body>
 </html>
+
