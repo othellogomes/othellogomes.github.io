@@ -2,130 +2,205 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Your Name | Academic Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Othello D. Gomes</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        /* ---------- Basic Reset ---------- */
+        * {
             margin: 0;
             padding: 0;
-            background: #fafafa;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background: #f8f9fa;
             color: #222;
         }
-        header, footer {
-            background: #004080;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-        main {
-            padding: 1rem 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-        h1, h2 {
-            color: #004080;
-        }
-        nav {
-            margin-bottom: 1rem;
-        }
-        nav a {
-            margin: 0 1rem;
-            color: #004080;
+
+        a {
+            color: #0056b3;
             text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ---------- Layout ---------- */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 10px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 2.4em;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            margin: 0 10px;
             font-weight: bold;
         }
-        .contact-links a {
-            display: inline-block;
-            margin-right: 1rem;
-            text-decoration: none;
-            color: #004080;
+
+        section {
+            margin: 40px 0;
         }
-        .section {
-            margin-bottom: 2rem;
+
+        section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .publication {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #ddd;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Othello D. Gomes</h1>
-</header>
+<div class="container">
 
-<nav>
-    <a href="#about">About Me</a>
-    <a href="#research">Research</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <header>
+        <h1>Your Name</h1>
+        <p>PhD Student / Researcher in Physics / Computer Science</p>
+        <p>
+            <a href="mailto:your.email@university.edu">your.email@university.edu</a> |
+            <a href="https://github.com/yourusername">GitHub</a> |
+            <a href="https://scholar.google.com/">Google Scholar</a>
+        </p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<main>
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
+    <section id="about">
+        <h2>About</h2>
         <p>
-            Hello there, my name is Othello (they/he). I am currently a Ph.D. student in physics at the University of Cincinnati,
-            aspiring to go into experimental High Energy Physics and detector R&amp;D. I am currently a Teaching Assistant for
-            General &amp; College Physics II Labs for Fall 2025. Previously, I was an undergraduate physics student at the
-            University of Maryland, College Park. :contentReference[oaicite:0]{index=0}
-        </p>
-        <p>
-            During my time at UMD, I was involved in a few projects ranging from theory to experiment: exoplanet astrophysics,
-            quantum information science, and particle physics. :contentReference[oaicite:1]{index=1}
-        </p>
-        <p>
-            I was recently involved with the Large Hadron Collider beauty (LHCb) flavor physics group, where I am being supervised
-            by Prof. Phoebe Hamilton on R&amp;D for the LHCb experiment’s ECAL for Upgrades Ib and II, an effort known as PicoCal
-            within the collaboration. :contentReference[oaicite:2]{index=2}
-        </p>
-        <p>
-            Prior to that, I worked on the analysis of the Z-Hadronic cross section comparing the difference between two MC
-            generators in the background and using the uncertainty of it to apply cuts to final states of Z, in affiliation with
-            Prof. Christoph Paus’ group at MIT. :contentReference[oaicite:3]{index=3}
-        </p>
-        <p>
-            I have also worked with the Joint Center for Quantum Information and Computer Science (QuICS), affiliated with the
-            Institute for Advanced Computer Studies at UMD: my project there was on easing and curing the quantum Monte Carlo sign
-            problem via boundary and physical phase transitions. :contentReference[oaicite:4]{index=4}
-        </p>
-        <p>
-            I initially started my journey as a community college student at the Rockville campus of Montgomery College, where I
-            earned my Associate of Science degree in Mathematics. I always knew my interests were in the physical and mathematical
-            sciences, starting with the GRAD-MAP program which helped equip historically marginalized communities with basic
-            research skills. :contentReference[oaicite:5]{index=5}
+            Brief academic biography. Describe your research interests, current position,
+            and institutional affiliation. Keep it professional and concise.
         </p>
     </section>
 
-    <!-- Research Placeholder -->
-    <section id="research" class="section">
-        <h2>Research</h2>
-        <p>Details about research projects will go here. You can link PDFs, documents, or project pages.</p>
+    <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Quantum Mechanics and Quantum Information</li>
+            <li>Computational Physics and High-Performance Computing</li>
+            <li>Numerical Methods and Simulation</li>
+        </ul>
     </section>
 
-    <!-- Portfolio Placeholder -->
-    <section id="portfolio" class="section">
-        <h2>Portfolio</h2>
-        <p>Links and descriptions of portfolio items (talks, posters, code, publications, etc.) go here.</p>
-    </section>
+    <section id="publications">
+        <h2>Publications & Preprints</h2>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-        <h2>Contact &amp; Social Media</h2>
-        <div class="contact-links">
-            <a href="mailto:your.email@example.com">Email</a>
-            <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
-            <a href="https://twitter.com/yourhandle">Twitter</a>
-            <a href="https://www.youtube.com/@yourchannel">YouTube</a>
-            <span>Discord: <strong>shakespeareanjoke</strong></span>
+        <div class="publication">
+            <strong>Author, A., Author, B.</strong> (Year).  
+            <em>Title of the paper.</em> Journal Name, Volume(Issue), pages.  
+            <a href="#">[PDF]</a> <a href="#">[DOI]</a>
+        </div>
+
+        <div class="publication">
+            <strong>Author, A.</strong> (Year).  
+            <em>Title of another paper.</em> arXiv:xxxx.xxxxx  
+            <a href="#">[arXiv]</a>
         </div>
     </section>
-</main>
 
-<footer>
-    <p>&copy; Othello D. Gomes</p>
-</footer>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Project Title:</strong> Short description of your research or software project.
+                <a href="#">[GitHub]</a>
+            </li>
+            <li>
+                <strong>Another Project:</strong> Brief explanation and outcomes.
+                <a href="#">[Details]</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="teaching">
+        <h2>Teaching</h2>
+        <ul>
+            <li>Course Name – Institution (Year)</li>
+            <li>Teaching Assistant, Course Name – Institution (Year)</li>
+        </ul>
+    </section>
+
+    <section id="cv">
+        <h2>Curriculum Vitae</h2>
+        <p>
+            Download my CV: <a href="cv.pdf">cv.pdf</a>
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            Department of Physics<br>
+            University Name<br>
+            City, State, Country<br>
+            Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a>
+        </p>
+    </section>
+
+    <footer>
+        © 2026 Your Name. Hosted on GitHub Pages.
+    </footer>
+
+</div>
 
 </body>
 </html>
-
